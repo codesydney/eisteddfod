@@ -1,0 +1,92 @@
+img.logo-main {
+  width: 8vw !important;
+  border-radius: 8%;
+}
+
+img.icons {
+  filter: invert(19%) sepia(7%) saturate(526%) hue-rotate(260deg)
+    brightness(94%) contrast(86%);
+}
+
+.btn-theme.btn-gradient {
+  background: linear-gradient(to right, #494685 0%, #494685 100%);
+}
+
+.home-slider-area.slider-default
+  .slider-content-area
+  .content
+  .tittle-wrp
+  h2
+  span:before {
+  filter: invert(20%) sepia(6%) saturate(572%) hue-rotate(260deg)
+    brightness(91%) contrast(86%);
+}
+
+a:hover,
+a:active,
+a:focus {
+  box-shadow: none;
+  color: #e0ccdc !important ;
+  outline: none;
+  text-decoration: none;
+}
+
+.section-title .title span {
+  /* background: #FEA444; */
+  background: linear-gradient(to right, #e0ccdc 0%, #baaab7 190%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.causes-item .content .donate-info .info-item .amount {
+  background: linear-gradient(to left, #494685 0%, #3e393d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.causes-item .content .donate-info .info-item:hover {
+  background: #e0ccdc;
+  background: linear-gradient(to left, #e0ccdc 0%, #494685 100%);
+}
+.causes-item .content .donate-info .info-item:hover .info-title,
+.causes-item .content .donate-info .info-item:hover .amount {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
+img.icon.icon-img {
+  filter: invert(13%) sepia(2%) saturate(3808%) hue-rotate(260deg)
+    brightness(101%) contrast(74%);
+}
+
+img.shape-img3,
+#circle1 {
+  filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
+    brightness(89%) contrast(86%);
+}
+
+.home-slider-area.slider-default
+  .slider-content-area
+  .content
+  .subtitle-content
+  h6 {
+  background: linear-gradient(to right, #474480 0%, #baaab7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-box-style1 .icon-box-item {
+  background-color: #474480;
+}
+
+.icon-box-style1 .icon-box-item.item-three {
+  background-color: #baaab7;
+}
+
+.home-slider-area.slider-default
+  .slider-content-area
+  .layer-style
+  .donate-circle-wrp {
+  background-image: -ms-linear-gradient(-30deg, #474480 0%, #baaab7 100%);
+  background: linear-gradient(-30deg, #474480 0%, #baaab7 100%);
+}
