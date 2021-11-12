@@ -50,16 +50,21 @@ img.line-shape {
   filter: var(--icons-and-shapes-color);
 }
 
-/* Active */
+img.shape-line-img {
+  filter: var(--active-nav-color);
+}
+
+/* Active 
 header.header-area.header-default
   .header-align
   .header-navigation-area
   .main-menu
   > li.active
-  > a::before,
-  img.shape-line-img {
-  filter: var(--active-nav-color);
-}
+  > a::before {
+    filter: var(--active-nav-color);
+  }
+*/
+
 
 .home-slider-area.slider-default
   .slider-content-area
@@ -102,8 +107,6 @@ a:focus {
   color: #fff;
   -webkit-text-fill-color: #fff;
 }
-
-
 
 img.shape-img3,
 #circle1 {

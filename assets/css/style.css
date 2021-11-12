@@ -2701,6 +2701,7 @@ table p {
 }
 .header-area.header-default .header-align .header-navigation-area .main-menu > li.active > a:before {
   background-image: url("../img/shape/menu-shape.png");
+  filter: invert(27%) sepia(33%) saturate(908%) hue-rotate(204deg);
   background-repeat: no-repeat;
   background-position: 45% 15%;
   content: "";
