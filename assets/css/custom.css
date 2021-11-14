@@ -46,7 +46,8 @@ img.img-shape,
 img.icon-img,
 img.shape-img,
 img.icon,
-img.line-shape {
+img.line-shape,
+.shape-layer img {
   filter: var(--icons-and-shapes-color);
 }
 
@@ -64,7 +65,6 @@ header.header-area.header-default
     filter: var(--active-nav-color);
   }
 */
-
 
 .home-slider-area.slider-default
   .slider-content-area
@@ -152,4 +152,55 @@ img.circle-img {
 
 .about-area .about-content .text-style:before {
   background-color: #baaab7;
+}
+
+.welcome-content .client-content p {
+  color: #c2c2c2;
+  font-size: 17.50px;
+  font-family: "Yeseva One", cursive; /*  */
+  line-height: 1.6;
+  width: 35vw;
+}
+
+.welcome-content .client-content h1 {
+  color: #c2c2c2;
+}
+
+table#entry-fees {
+  font-family: "Yeseva One", cursive;
+  margin-top: 3%;
+  color: #fff;
+}
+
+table#entry-fees tr > th,
+table#entry-fees tr > td {
+  padding: 1%;
+}
+
+table#entry-fees tr > td {
+  width: 448px;
+}
+
+table#entry-fees tr > th {
+  background: linear-gradient(#54528a, #9198e5);
+}
+
+table#entry-fees tr > th#desc {
+  border-top-left-radius: 20px ;
+}
+
+table#entry-fees tr > th#session-fee {
+  border-top-right-radius: 20px ;
+}
+
+table#entry-fees tr > td {
+  border: 1px solid #c2c2c2;
+  border-radius: 3px;
+}
+
+
+.footer-area .footer-bottom .widget-copyright p span,
+.footer-area .footer-bottom .widget-copyright p a,
+.footer-area .footer-bottom .widget-copyright p i {
+  color: #4280e5;
 }
