@@ -156,7 +156,7 @@ img.circle-img {
 
 .welcome-content .client-content p {
   color: #c2c2c2;
-  font-size: 17.50px;
+  font-size: 17.5px;
   font-family: "Yeseva One", cursive; /*  */
   line-height: 1.6;
   width: 35vw;
@@ -186,11 +186,11 @@ table#entry-fees tr > th {
 }
 
 table#entry-fees tr > th#desc {
-  border-top-left-radius: 20px ;
+  border-top-left-radius: 20px;
 }
 
 table#entry-fees tr > th#session-fee {
-  border-top-right-radius: 20px ;
+  border-top-right-radius: 20px;
 }
 
 table#entry-fees tr > td {
@@ -198,9 +198,33 @@ table#entry-fees tr > td {
   border-radius: 3px;
 }
 
-
 .footer-area .footer-bottom .widget-copyright p span,
 .footer-area .footer-bottom .widget-copyright p a,
 .footer-area .footer-bottom .widget-copyright p i {
   color: #4280e5;
+}
+
+@media (max-width: 600px) {
+  h1.title {
+    text-align: center;
+  }
+  .welcome-content .client-content p {
+    color: #c2c2c2;
+    font-size: 17.5px;
+    font-family: "Yeseva One", cursive; /*  */
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 75vw;
+  }
+
+  .welcome-content .client-content div.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .sponsors {
+    margin: 0 auto;
+  }
 }
