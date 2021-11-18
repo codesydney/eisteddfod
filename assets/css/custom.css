@@ -6,6 +6,7 @@
   --purple-linear-gradient: linear-gradient(to right, #494685 0%, #494685 100%);
 }
 
+/* Home page*/
 img.logo-main,
 img.logo-light,
 a.footer-logo > img {
@@ -227,4 +228,10 @@ table#entry-fees tr > td {
   .sponsors {
     margin: 0 auto;
   }
+}
+
+/* About Us page*/
+.section-title .title.org {
+  font-size: 60px;
+  width: 75vw;
 }
