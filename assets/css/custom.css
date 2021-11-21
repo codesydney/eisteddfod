@@ -11,8 +11,12 @@ img.logo-main,
 img.logo-light,
 a.footer-logo > img {
   width: 8vw !important;
-  border-radius: 25%;
+  border-radius: 50%;
   box-shadow: 0 4px 8px 0 #494685;
+}
+
+img.icons {
+  width: 50px;
 }
 
 img.icons {
@@ -88,7 +92,7 @@ a:focus {
 
 .section-title .title span {
   /* background: #FEA444; */
-  background: linear-gradient(to right, #e0ccdc 0%, #baaab7 190%);
+  background: var(--purple-linear-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -156,15 +160,16 @@ img.circle-img {
 }
 
 .welcome-content .client-content p {
-  color: #c2c2c2;
-  font-size: 17.5px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 300;
   font-family: "Yeseva One", cursive; /*  */
   line-height: 1.6;
   width: 35vw;
 }
 
 .welcome-content .client-content h1 {
-  color: #c2c2c2;
+  color: #fff;
 }
 
 table#entry-fees {
@@ -211,7 +216,8 @@ table#entry-fees tr > td {
   }
   .welcome-content .client-content p {
     color: #c2c2c2;
-    font-size: 17.5px;
+    font-size: 1.25rem;
+    font-weight: 300;
     font-family: "Yeseva One", cursive; /*  */
     line-height: 1.6;
     margin: 0 auto;
