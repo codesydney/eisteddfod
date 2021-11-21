@@ -6,6 +6,14 @@
   --purple-linear-gradient: linear-gradient(to right, #494685 0%, #494685 100%);
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #8cd3ff;
+}
+
 /* Home page*/
 img.logo-main,
 img.logo-light,
@@ -167,7 +175,6 @@ img.circle-img {
 
 .welcome-content .client-content p {
   color: #fff;
-  font-family: "Yeseva One", cursive; /*  */
   line-height: 1.6;
   width: 35vw;
 }
