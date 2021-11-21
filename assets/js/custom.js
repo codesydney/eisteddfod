@@ -49,8 +49,9 @@
     speed: 1000,
     loop: true,
     spaceBetween : 30,
-    autoplay: true,
+    autoplay: { delay: 40000 },
     effect: 'fade',
+    longSwipesMs: 9000,
     fadeEffect: {
       crossFade: true,
     },
