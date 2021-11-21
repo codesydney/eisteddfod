@@ -6,6 +6,14 @@
   --purple-linear-gradient: linear-gradient(to right, #494685 0%, #494685 100%);
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #8cd3ff;
+}
+
 /* Home page*/
 img.logo-main,
 img.logo-light,
@@ -13,6 +21,10 @@ a.footer-logo > img {
   width: 8vw !important;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 #494685;
+}
+
+img.icons {
+  width: 50px;
 }
 
 img.icons {
@@ -94,7 +106,7 @@ a:focus {
 
 .section-title .title span {
   /* background: #FEA444; */
-  background: linear-gradient(to right, #e0ccdc 0%, #baaab7 190%);
+  background: var(--purple-linear-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -163,8 +175,6 @@ img.circle-img {
 
 .welcome-content .client-content p {
   color: #fff;
-
-  font-family: "Yeseva One", cursive; /*  */
   line-height: 1.6;
   width: 35vw;
 }
