@@ -28,6 +28,12 @@ img.icons {
   background: var(--purple-linear-gradient);
 }
 
+.p-text {
+  font-size: 1.25rem;
+  width: 35vw;
+  font-weight: 300;
+}
+
 .btn-theme.btn-gradient,
 .testimonial-area.testimonial-default-area .title-wrp:after {
   background: var(--purple-linear-gradient);
@@ -161,8 +167,6 @@ img.circle-img {
 
 .welcome-content .client-content p {
   color: #fff;
-  font-size: 1.25rem;
-  font-weight: 300;
   font-family: "Yeseva One", cursive; /*  */
   line-height: 1.6;
   width: 35vw;
@@ -215,15 +219,17 @@ table#entry-fees tr > td {
     text-align: center;
   }
   .welcome-content .client-content p {
-    color: #c2c2c2;
-    font-size: 1.25rem;
-    font-weight: 300;
+    color: #fff;
+    font-size: 17.5px;
     font-family: "Yeseva One", cursive; /*  */
     line-height: 1.6;
     margin: 0 auto;
     width: 75vw;
   }
 
+  .p-text {
+    width: 70vw;
+  }
   .welcome-content .client-content div.text {
     display: flex;
     align-items: center;
