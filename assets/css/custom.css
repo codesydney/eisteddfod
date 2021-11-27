@@ -301,8 +301,8 @@ div.title-container > h2.title {
   width: 50vw;
 }
 
-h2.title {
-  width: 50vw;
+ul.nav-menu.nav.align-right {
+  width: 15vw;
 }
 
 .content {
