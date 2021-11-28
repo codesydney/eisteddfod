@@ -3,7 +3,7 @@
     brightness(92%) contrast(93%);
   --icons-and-shapes-color: invert(27%) sepia(33%) saturate(908%)
     hue-rotate(204deg) brightness(92%) contrast(93%);
-  --purple-linear-gradient: linear-gradient(to right, #494685 0%, #494685 100%);
+  --purple-linear-gradient: linear-gradient(to right, #494685 0%, #3a3367 100%);
 }
 
 * {
@@ -38,7 +38,7 @@ img.icons {
 }
 
 .p-text {
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   width: 35vw;
   font-weight: 300;
 }
@@ -75,17 +75,6 @@ img.shape-line-img {
   filter: var(--active-nav-color);
 }
 
-/* Active 
-header.header-area.header-default
-  .header-align
-  .header-navigation-area
-  .main-menu
-  > li.active
-  > a::before {
-    filter: var(--active-nav-color);
-  }
-*/
-
 .home-slider-area.slider-default
   .slider-content-area
   .content
@@ -106,11 +95,12 @@ a:focus {
 }
 
 .section-title .title span {
-  /* background: #FEA444; */
   background: var(--purple-linear-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
 
 .causes-item .content .donate-info .info-item .amount {
   background: linear-gradient(to left, #494685 0%, #3e393d 100%);
@@ -342,6 +332,10 @@ ul.nav-menu.nav.align-right {
     margin: 0 auto;
   }
 
+  ul.nav-menu.nav.align-right {
+    width: 40vw !important;
+  }
+
   div.about-us > p.mb-0.p-text {
     width: 80vw !important;
   }
@@ -381,7 +375,6 @@ ul.nav-menu.nav.align-right {
     width: 80vw !important;
   }
 
-  
   .content p {
     margin: 0 auto;
     width: 70vw;
