@@ -38,7 +38,7 @@ img.icons {
 }
 
 .p-text {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   width: 35vw;
   font-weight: 300;
 }
@@ -99,8 +99,6 @@ a:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
 
 .causes-item .content .donate-info .info-item .amount {
   background: linear-gradient(to left, #494685 0%, #3e393d 100%);
@@ -299,18 +297,28 @@ ul.nav-menu.nav.align-right {
   margin: 1rem;
 }
 
-@media (max-width: 600px) {
-  /* Home Page*/
+@media screen and (max-width: 600px) {
+  /* 600px */
+  /* Home Page */
   h1.title {
     text-align: center;
   }
   .welcome-content .client-content p {
     color: #fff;
     font-size: 17.5px;
-    font-family: "Yeseva One", cursive; /*  */
+    font-family: "Yeseva One", cursive;
     line-height: 1.6;
     margin: 0 auto;
     width: 75vw;
+  }
+
+  /* Hide button in mobile view */
+  a.btn-theme.btn-gradient.btn-slide.btn-style {
+    display: none;
+  }
+
+  li {
+    display: block !important;
   }
 
   .p-text {
@@ -363,15 +371,13 @@ ul.nav-menu.nav.align-right {
     margin: 1.5rem;
   }
 
-  /* 
-  div.title-container > h2.title {
-    font-size: 28px;
-  }*/
-
   section.volunteer-text h2.title,
   div.section-title h2.title {
     font-size: 38px;
     margin: 0 auto;
+  }
+
+  section.volunteer-text h2.title {
     width: 80vw !important;
   }
 
