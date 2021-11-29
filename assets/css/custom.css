@@ -371,15 +371,13 @@ ul.nav-menu.nav.align-right {
     margin: 1.5rem;
   }
 
-  /* 
-  div.title-container > h2.title {
-    font-size: 28px;
-  }*/
-
   section.volunteer-text h2.title,
   div.section-title h2.title {
     font-size: 38px;
     margin: 0 auto;
+  }
+
+  section.volunteer-text h2.title {
     width: 80vw !important;
   }
 
