@@ -381,6 +381,12 @@ ul.nav-menu.nav.align-right {
     width: 80vw !important;
   }
 
+  img#one {
+    object-fit: cover;
+    height: 19.5rem;
+    width: 199px;
+  }
+
   .content p {
     margin: 0 auto;
     width: 70vw;
