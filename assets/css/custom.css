@@ -95,9 +95,14 @@ a:focus {
 }
 
 .section-title .title span {
-  background: var(--purple-linear-gradient);
+  background: black; /* var(--purple-linear-gradient) */
+  font-family: "Yeseva One", cursive;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.tittle-wrp span {
+  font-family: "Yeseva One", cursive;
 }
 
 .causes-item .content .donate-info .info-item .amount {
@@ -379,6 +384,12 @@ ul.nav-menu.nav.align-right {
 
   section.volunteer-text h2.title {
     width: 80vw !important;
+  }
+
+  img#one {
+    object-fit: cover;
+    height: 19.5rem;
+    width: 199px;
   }
 
   .content p {

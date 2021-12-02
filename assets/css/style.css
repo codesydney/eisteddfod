@@ -3448,7 +3448,7 @@ table p {
   z-index: 1;
 }
 .home-slider-area.slider-default .slider-content-area .content .tittle-wrp h2 span:before {
-  background-image: url("../img/shape/banner-title-shape.png");
+  /* background-image: url("../img/shape/banner-title-shape.png"); */
   background-repeat: no-repeat;
   background-position: 13px 9px;
   content: "";
