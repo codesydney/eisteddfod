@@ -126,6 +126,13 @@ a:focus {
   -webkit-text-fill-color: #fff;
 }
 
+.subtitle-content h6::selection {
+  -webkit-text-fill-color: #fff;
+}
+.subtitle-content h6::-moz-selection {
+  -webkit-text-fill-color: #fff;
+}
+
 .tittle-wrp span {
   font-family: "Yeseva One", cursive;
 }
