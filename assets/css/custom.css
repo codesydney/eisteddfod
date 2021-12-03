@@ -18,6 +18,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* body {
+  font-size: 1.4375 !important;
+} */
+
 a {
   color: #474480;
   font-weight: 600;
@@ -46,13 +50,6 @@ img.icons {
   background: var(--purple-linear-gradient);
 }
 
-/* .section-title .title span {
-  background: #FEA444;
-  background: linear-gradient(to right, #FEA444 0%, #FC6539 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
 .p-text {
   font-size: 1.5rem;
   width: 35vw;
@@ -70,6 +67,38 @@ img.icons {
 
 .testimonial-single .client-info .designation {
   color: white;
+}
+
+/* =====================
+  SPACING
+ ===================== */
+.mt-5rem {
+  margin-top: 5rem;
+}
+
+/* =====================
+  TYPOGRAPHY
+ ===================== */
+.custom-font-size {
+  font-size: 1.4375rem;
+  color: #333;
+  font-weight: 300;
+}
+
+/* =====================
+  LIST
+  ===================== */
+.list {
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+.list li {
+  list-style: disc;
+}
+
+.list li::marker {
+  color: #e0ccdc;
 }
 
 /* 3 cards */
