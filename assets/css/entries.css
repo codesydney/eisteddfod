@@ -86,22 +86,6 @@
 }
 
 /* =====================
-  INSTRUCTION LIST
-  ===================== */
-.instructions-list {
-  margin-left: 2rem;
-  margin-top: 0;
-}
-
-.instructions-list li {
-  list-style: disc;
-}
-
-.instructions-list li::marker {
-  color: #e0ccdc;
-}
-
-/* =====================
   CONTACT INFO
   ===================== */
 .contact-info-container {
