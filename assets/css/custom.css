@@ -7,11 +7,11 @@
 }
 
 ::-moz-selection {
-  background-color:#7C39D9;
+  background-color: #7c39d9;
 }
 
 ::selection {
-  background-color:#7C39D9;
+  background-color: #7c39d9;
 }
 
 * {
@@ -45,14 +45,12 @@ img.icons {
   background: var(--purple-linear-gradient);
 }
 
-
 /* .section-title .title span {
   background: #FEA444;
   background: linear-gradient(to right, #FEA444 0%, #FC6539 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
-
 
 .p-text {
   font-size: 1.5rem;
@@ -111,11 +109,9 @@ a:focus {
   text-decoration: none;
 }
 
-
-
 .section-title .title span {
   /* background: var(--purple-linear-gradient); */
-  background: linear-gradient(to right, #DC67DC 0%, #7C39D9 30%, #7C39D9 100%);
+  background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
   font-family: "Yeseva One", cursive;
   /* font-weight: 600; */
   -webkit-background-clip: text;
@@ -328,6 +324,10 @@ ul.nav-menu.nav.align-right {
 
 .content {
   margin: 1rem;
+}
+
+.bread-crumbs #active {
+  color: #e0ccdc;
 }
 
 @media screen and (max-width: 600px) {
