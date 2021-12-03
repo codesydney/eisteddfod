@@ -21,6 +21,7 @@
 a {
   color: #474480;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* Home page*/
@@ -327,6 +328,11 @@ ul.nav-menu.nav.align-right {
 }
 
 .bread-crumbs #active {
+  color: #e0ccdc;
+}
+
+.main-menu > li:hover > a,
+.main-menu > li.active > a {
   color: #e0ccdc;
 }
 
