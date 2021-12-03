@@ -6,6 +6,14 @@
   --purple-linear-gradient: linear-gradient(to right, #494685 0%, #3a3367 100%);
 }
 
+::-moz-selection {
+  background-color:#7C39D9;
+}
+
+::selection {
+  background-color:#7C39D9;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -36,6 +44,15 @@ img.icons {
 .section-title .subtitle.line-theme-color:after {
   background: var(--purple-linear-gradient);
 }
+
+
+/* .section-title .title span {
+  background: #FEA444;
+  background: linear-gradient(to right, #FEA444 0%, #FC6539 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
 
 .p-text {
   font-size: 1.5rem;
@@ -94,11 +111,22 @@ a:focus {
   text-decoration: none;
 }
 
+
+
 .section-title .title span {
-  background: black; /* var(--purple-linear-gradient) */
+  /* background: var(--purple-linear-gradient); */
+  background: linear-gradient(to right, #DC67DC 0%, #7C39D9 30%, #7C39D9 100%);
   font-family: "Yeseva One", cursive;
+  /* font-weight: 600; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.section-title .title span::-moz-ssselection {
+  -webkit-text-fill-color: #fff;
+}
+.section-title .title span::selection {
+  -webkit-text-fill-color: #fff;
 }
 
 .tittle-wrp span {
