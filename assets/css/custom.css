@@ -115,6 +115,7 @@ a:focus {
   background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
   font-family: "Yeseva One", cursive;
   /* font-weight: 600; */
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -139,6 +140,7 @@ a:focus {
 
 .causes-item .content .donate-info .info-item .amount {
   background: linear-gradient(to left, #494685 0%, #3e393d 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
