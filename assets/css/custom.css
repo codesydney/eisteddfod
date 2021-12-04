@@ -149,6 +149,15 @@ a:focus {
   -webkit-text-fill-color: transparent;
 }
 
+h2.title.vision {
+  background-image: url(../img/shape/banner-title-shape.png);
+  background-repeat: no-repeat; 
+  filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
+    brightness(89%) contrast(86%);
+    color: #000000;
+    text-shadow: 1px 2px white;
+}
+
 .section-title .title span::-moz-ssselection {
   -webkit-text-fill-color: #fff;
 }
