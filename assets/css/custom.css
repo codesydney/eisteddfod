@@ -130,6 +130,10 @@ img.shape-line-img {
     brightness(91%) contrast(86%);
 }
 
+.widget-copyright.text-center {
+  color: white;
+}
+
 a:hover,
 a:active,
 a:focus {
