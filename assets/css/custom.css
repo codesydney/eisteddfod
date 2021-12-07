@@ -155,11 +155,11 @@ a:focus {
 
 h2.title.vision {
   background-image: url(../img/shape/banner-title-shape.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
     brightness(89%) contrast(86%);
-    color: #000000;
-    text-shadow: 1px 2px white;
+  color: #000000;
+  text-shadow: 1px 2px white;
 }
 
 .section-title .title span::-moz-ssselection {
@@ -237,10 +237,17 @@ img.circle-img {
   .donate-circle-wrp {
   background-image: -ms-linear-gradient(-30deg, #474480 0%, #baaab7 100%);
   background: linear-gradient(-30deg, #474480 0%, #baaab7 100%);
+  width: 22.7rem;
+  height: 24rem;
 }
 
 div.about-us > p.mb-0.p-text {
   width: 50vw !important;
+}
+
+.pie-chart-circle canvas {
+  height: 300px !important;
+  width: 278px!important;
 }
 
 .about-area .about-content .text-style:before {
