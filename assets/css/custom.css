@@ -70,6 +70,18 @@ img.icons {
 }
 
 /* =====================
+  GENERAL
+ ===================== */
+.colorful {
+  background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
+  color: #fff;
+  padding: 0.3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =====================
   SPACING
  ===================== */
 .mt-5rem {
@@ -209,6 +221,7 @@ img.shape-img3,
   .subtitle-content
   h6 {
   background: linear-gradient(to right, #474480 0%, #baaab7 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -247,7 +260,7 @@ div.about-us > p.mb-0.p-text {
 
 .pie-chart-circle canvas {
   height: 300px !important;
-  width: 278px!important;
+  width: 278px !important;
 }
 
 .about-area .about-content .text-style:before {
