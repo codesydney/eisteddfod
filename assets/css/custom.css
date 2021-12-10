@@ -443,6 +443,12 @@ ul.nav-menu.nav.align-right {
   width: 16vw;
   position: absolute;
   top: 200px;
+  overflow: overlay;
+  height: 210px;
+}
+
+.statement {
+  padding: 1.5rem;
 }
 
 .bread-crumbs #active {
