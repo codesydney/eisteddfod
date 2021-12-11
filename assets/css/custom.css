@@ -81,6 +81,11 @@ img.icons {
   -webkit-text-fill-color: transparent;
 }
 
+.colorful::selection,
+.colorful::-moz-selection {
+  -webkit-text-fill-color: #fff;
+}
+
 /* =====================
   SPACING
  ===================== */
