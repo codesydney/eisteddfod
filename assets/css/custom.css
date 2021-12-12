@@ -103,6 +103,23 @@ img.icons {
 }
 
 /* =====================
+  GENERAL
+ ===================== */
+.colorful {
+  background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
+  color: #fff;
+  padding: 0.3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.colorful::selection,
+.colorful::-moz-selection {
+  -webkit-text-fill-color: #fff;
+}
+
+/* =====================
   SPACING
  ===================== */
 .mt-5rem {
@@ -119,6 +136,32 @@ img.icons {
 }
 
 /* =====================
+  VISON WITH SPLASH OF INK BG
+  ===================== */
+.vision-shape {
+  position: absolute;
+  filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
+    brightness(89%) contrast(86%);
+  left: -15px;
+  z-index: -1;
+  top: 60px;
+  width: 410px;
+  height: 70px;
+}
+
+.illuminating {
+  position: relative;
+  stroke: 2px #000;
+}
+
+#text-gradient {
+  background: linear-gradient(to right, #fff 50%, #dc67dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =====================
   LIST
   ===================== */
 .list {
@@ -132,6 +175,87 @@ img.icons {
 
 .list li::marker {
   color: #e0ccdc;
+}
+
+/* =====================
+  SPONSORS AREA
+  ===================== */
+.sponsors-area {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .sponsors-area {
+    flex-direction: column;
+  }
+}
+
+/* =====================
+  BADGE
+  ===================== */
+.semi-circle {
+  position: absolute;
+  width: 100%;
+  transform: rotate(-98deg);
+}
+
+.semi-circle path {
+  transform: scale(1.3);
+  fill: transparent;
+}
+
+.custom-badge {
+  border: 10px solid gold;
+  border-top-right-radius: 14%;
+  border-top-left-radius: 14%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 0;
+  width: 240px;
+}
+
+.custom-badge-inner {
+  border: 5px solid #ffbb0c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 0.8rem 0.5rem 1.5rem;
+  position: relative;
+}
+
+text {
+  letter-spacing: 1px;
+}
+
+.custom-badge-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-badge .logo {
+  border-radius: 50%;
+  width: 90%;
+  opacity: 1;
+  z-index: -1;
+  padding: 1rem 1rem 0.5rem;
+}
+
+.gold {
+  background-color: gold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 /* 3 cards */
@@ -191,8 +315,8 @@ h2.title.vision {
   background-repeat: no-repeat;
   filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
     brightness(89%) contrast(86%);
-  color: #000000;
-  text-shadow: 1px 2px white;
+  /* color: #000000; */
+  /* text-shadow: 1px 2px white; */
 }
 
 .section-title .title span::-moz-ssselection {
@@ -242,6 +366,7 @@ img.shape-img3,
   .subtitle-content
   h6 {
   background: linear-gradient(to right, #474480 0%, #baaab7 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -280,7 +405,7 @@ div.about-us > p.mb-0.p-text {
 
 .pie-chart-circle canvas {
   height: 300px !important;
-  width: 278px!important;
+  width: 278px !important;
 }
 
 .about-area .about-content .text-style:before {
