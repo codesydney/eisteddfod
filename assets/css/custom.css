@@ -69,6 +69,39 @@ img.icons {
   color: white;
 }
 
+.img-separator {
+  position: absolute;
+  top: 165px;
+}
+
+.testimonial-content {
+  color: #fff;
+}
+
+.icon-box-item.item-one.mb-md-30 .content > .testimonial-content,
+.icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
+.icon-box-item.item-three .content > .testimonial-content {
+  position: absolute;
+  top: 230px;
+  width: 300px;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 170px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
 /* =====================
   SPACING
  ===================== */
@@ -231,58 +264,6 @@ img.circle-img {
   background-color: #baaab7;
 }
 
-.title-wrapper {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.title-wrapper h1 {
-  font-size: 60px;
-  line-height: 1.25;
-  text-shadow: 1px 3px lightgray !important;
-}
-
-.icon-box-item.item-one.mb-md-30,
-.icon-box-item.item-two.mb-md-30,
-.icon-box-item.item-three {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  height: 470px;
-}
-
-.separator-line {
-  width: 5vw;
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.icon-box-style1 .icon-box-item .content p {
-  width: inherit;
-  color: white;
-}
-
-.about {
-  color: white;
-}
-
-h4.testimonial-name.about,
-h6.testimonial-sponsor.about {
-  font-weight: 300;
-  font-family: "Roboto";
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h4.testimonial-name.about,
-h6.testimonial-sponsor.about {
-  text-align: center;
-}
-
-.row.icon-box-style1.aos-init.aos-animate {
-  margin-top: 5rem;
-}
-
 .home-slider-area.slider-default
   .slider-content-area
   .layer-style
@@ -299,7 +280,7 @@ div.about-us > p.mb-0.p-text {
 
 .pie-chart-circle canvas {
   height: 300px !important;
-  width: 278px !important;
+  width: 278px!important;
 }
 
 .about-area .about-content .text-style:before {
@@ -433,22 +414,8 @@ ul.nav-menu.nav.align-right {
   width: 15vw;
 }
 
-.img-separator {
-  position: absolute;
-  top: 165px;
-}
-
 .content {
   margin: 1rem;
-  width: 16vw;
-  position: absolute;
-  top: 200px;
-  overflow: overlay;
-  height: 210px;
-}
-
-.statement {
-  padding: 1.5rem;
 }
 
 .bread-crumbs #active {
@@ -460,6 +427,61 @@ ul.nav-menu.nav.align-right {
   color: #e0ccdc;
 }
 
+.testimonials {
+  color: white;
+}
+
+.title-wrapper {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.title-wrapper h1 {
+  font-size: 60px;
+  line-height: 1.25;
+  text-shadow: 1px 3px lightgray !important;
+}
+
+.icon-box-item.item-one.mb-md-30,
+.icon-box-item.item-two.mb-md-30,
+.icon-box-item.item-three {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 470px;
+}
+
+.separator-line {
+  width: 5vw;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.icon-box-style1 .icon-box-item .content p {
+  width: inherit;
+  color: white;
+}
+
+.about {
+  color: white;
+}
+
+h4.testimonial-name.about,
+h6.testimonial-sponsor.about {
+  font-weight: 300;
+  font-family: "Roboto";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h4.testimonial-name.about,
+h6.testimonial-sponsor.about {
+  text-align: center;
+}
+
+.row.icon-box-style1.aos-init.aos-animate {
+  margin-top: 5rem;
+}
 @media screen and (max-width: 600px) {
   /* 600px */
   /* Home Page */
