@@ -1,0 +1,490 @@
+:root {
+  --active-nav-color: invert(27%) sepia(33%) saturate(908%) hue-rotate(204deg)
+    brightness(92%) contrast(93%);
+  --icons-and-shapes-color: invert(27%) sepia(33%) saturate(908%)
+    hue-rotate(204deg) brightness(92%) contrast(93%);
+  --purple-linear-gradient: linear-gradient(to right, #494685 0%, #3a3367 100%);
+}
+
+::-moz-selection {
+  background-color: #7c39d9;
+}
+
+::selection {
+  background-color: #7c39d9;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+
+a {
+  color: #474480;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+p {
+    margin-bottom: 22px;
+    font-size: 20px;
+
+}
+
+
+/* Home page*/
+img.logo-main,
+img.logo-light,
+a.footer-logo > img {
+  width: 8vw !important;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 #494685;
+}
+
+img.icons {
+  width: 50px;
+}
+
+img.icons {
+  filter: invert(19%) sepia(7%) saturate(526%) hue-rotate(260deg)
+    brightness(94%) contrast(86%);
+}
+
+.section-title .subtitle.line-theme-color:after {
+  background: var(--purple-linear-gradient);
+}
+
+.p-text {
+  font-size: 1rem;
+  width: 35vw;
+  font-weight: 300;
+}
+
+.btn-theme.btn-gradient,
+.testimonial-area.testimonial-default-area .title-wrp:after {
+  background: var(--purple-linear-gradient);
+}
+
+.section-title .subtitle {
+  color: #494685;
+}
+
+.testimonial-single .client-info .designation {
+  color: white;
+}
+
+/* =====================
+  SPACING
+ ===================== */
+.mt-5rem {
+  margin-top: 3rem;
+}
+
+/* =====================
+  TYPOGRAPHY
+ ===================== */
+.custom-font-size {
+  font-size: 1.4375rem;
+  color: #333;
+  font-weight: 300;
+}
+
+/* =====================
+  LIST
+  ===================== */
+.list {
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+.list li {
+  list-style: disc;
+}
+
+.list li::marker {
+  color: #e0ccdc;
+}
+
+/* 3 cards */
+.btn-theme.btn-border-gradient.gray-border:hover {
+  background: #494685;
+  background: linear-gradient(to left, #494685 0%, #e0ccdc 100%);
+}
+
+img.img-shape,
+img.icon-img,
+img.shape-img,
+img.icon,
+img.line-shape,
+.shape-layer img {
+  filter: var(--icons-and-shapes-color);
+}
+
+img.shape-line-img {
+  filter: var(--active-nav-color);
+}
+
+.home-slider-area.slider-default
+  .slider-content-area
+  .content
+  .tittle-wrp
+  h2
+  span:before {
+  filter: invert(20%) sepia(6%) saturate(572%) hue-rotate(260deg)
+    brightness(91%) contrast(86%);
+}
+
+.widget-copyright.text-center {
+  color: white;
+}
+
+a:hover,
+a:active,
+a:focus {
+  box-shadow: none;
+  color: #e0ccdc !important ;
+  outline: none;
+  text-decoration: none;
+}
+
+.section-title .title span {
+  /* background: var(--purple-linear-gradient); */
+  background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
+  font-family: "Yeseva One", cursive;
+  /* font-weight: 600; */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2.title.vision {
+  background-image: url(../img/shape/banner-title-shape.png);
+  background-repeat: no-repeat; 
+  filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
+    brightness(89%) contrast(86%);
+    color: #000000;
+    text-shadow: 1px 2px white;
+}
+
+.section-title .title span::-moz-ssselection {
+  -webkit-text-fill-color: #fff;
+}
+.section-title .title span::selection {
+  -webkit-text-fill-color: #fff;
+}
+
+.subtitle-content h6::selection {
+  -webkit-text-fill-color: #fff;
+}
+.subtitle-content h6::-moz-selection {
+  -webkit-text-fill-color: #fff;
+}
+
+.tittle-wrp span {
+  font-family: "Yeseva One", cursive;
+}
+
+.causes-item .content .donate-info .info-item .amount {
+  background: linear-gradient(to left, #494685 0%, #3e393d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.causes-item .content .donate-info .info-item:hover {
+  background: #e0ccdc;
+  background: linear-gradient(to left, #e0ccdc 0%, #494685 100%);
+}
+.causes-item .content .donate-info .info-item:hover .info-title,
+.causes-item .content .donate-info .info-item:hover .amount {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
+img.shape-img3,
+#circle1 {
+  filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
+    brightness(89%) contrast(86%);
+}
+
+.home-slider-area.slider-default
+  .slider-content-area
+  .content
+  .subtitle-content
+  h6 {
+  background: linear-gradient(to right, #474480 0%, #baaab7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+img#shape1 {
+  filter: invert(25%) sepia(8%) saturate(3931%) hue-rotate(204deg)
+    brightness(97%) contrast(85%);
+}
+
+img.circle-img {
+  filter: invert(27%) sepia(33%) saturate(908%) hue-rotate(204deg)
+    brightness(92%) contrast(93%);
+}
+
+.icon-box-style1 .icon-box-item {
+  background-color: #474480;
+}
+
+.icon-box-style1 .icon-box-item.item-three {
+  background-color: #baaab7;
+}
+
+.home-slider-area.slider-default
+  .slider-content-area
+  .layer-style
+  .donate-circle-wrp {
+  background-image: -ms-linear-gradient(-30deg, #474480 0%, #baaab7 100%);
+  background: linear-gradient(-30deg, #474480 0%, #baaab7 100%);
+}
+
+div.about-us > p.mb-0.p-text {
+  width: 50vw !important;
+}
+
+.about-area .about-content .text-style:before {
+  background-color: #baaab7;
+}
+
+.welcome-content .client-content p {
+  color: #fff;
+  line-height: 1.6;
+  width: 35vw;
+}
+
+.welcome-content .client-content h1 {
+  color: #fff;
+}
+
+table#entry-fees {
+  font-family: "Yeseva One", cursive;
+  margin-top: 3%;
+  color: #fff;
+}
+
+table#entry-fees tr > th,
+table#entry-fees tr > td {
+  padding: 1%;
+}
+
+table#entry-fees tr > td {
+  width: 448px;
+}
+
+table#entry-fees tr > th {
+  background: linear-gradient(#54528a, #9198e5);
+}
+
+table#entry-fees tr > th#desc {
+  border-top-left-radius: 20px;
+}
+
+table#entry-fees tr > th#session-fee {
+  border-top-right-radius: 20px;
+}
+
+table#entry-fees tr > td {
+  border: 1px solid #c2c2c2;
+  border-radius: 3px;
+}
+
+.footer-area .footer-bottom .widget-copyright p span,
+.footer-area .footer-bottom .widget-copyright p a,
+.footer-area .footer-bottom .widget-copyright p i {
+  color: #4280e5;
+}
+
+h2.title.text-white {
+  margin: 0 auto;
+}
+
+/* About Us page*/
+.section-title .title.org {
+  font-size: 60px;
+  width: 75vw;
+}
+
+.members {
+  margin: 1.1rem;
+}
+
+h2.member-designation {
+  color: #909090;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid #54528a;
+}
+
+.team-member .content .member-info .name {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h2.commitee-title.title-style {
+  color: black;
+}
+
+h2.commitee-title {
+  text-align: center;
+  color: #909090;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid #54528a;
+}
+
+.member-info {
+  margin: 4%;
+}
+
+.team-member .content .member-info .name {
+  margin-bottom: 10px;
+}
+
+.team-member .content .member-info .name a {
+  color: #001d23;
+  font-weight: 300;
+}
+
+/* Contact Page */
+.contact-info-content {
+  background: var(--purple-linear-gradient) !important;
+}
+
+section.privacy-text {
+  margin: 5rem;
+  
+}
+
+/* .title-container {
+  margin: 2rem;
+} */
+
+div.title-container > h2.title {
+  width: 45vw;
+  font-size: 60px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.content p {
+  margin: 0 auto;
+  width: auto;
+}
+
+
+ul.nav-menu.nav.align-right {
+  width: 15vw;
+}
+
+.content {
+  /* margin: 1rem; */
+}
+
+.bread-crumbs #active {
+  color: #e0ccdc;
+}
+
+.main-menu > li:hover > a,
+.main-menu > li.active > a {
+  color: #e0ccdc;
+}
+
+@media screen and (max-width: 600px) {
+  /* 600px */
+  /* Home Page */
+  h1.title {
+    text-align: center;
+  }
+  .welcome-content .client-content p {
+    color: #fff;
+    font-size: 17.5px;
+    font-family: "Yeseva One", cursive;
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 75vw;
+  }
+
+  /* Hide button in mobile view */
+  a.btn-theme.btn-gradient.btn-slide.btn-style {
+    display: none;
+  }
+
+  li {
+    display: block !important;
+  }
+
+  .p-text {
+    width: 70vw;
+  }
+  .welcome-content .client-content div.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .sponsors {
+    margin: 0 auto;
+  }
+
+  /* About Us page*/
+  h2.title.org {
+    margin: 0 auto;
+  }
+
+  ul.nav-menu.nav.align-right {
+    width: 40vw !important;
+  }
+
+  div.about-us > p.mb-0.p-text {
+    width: 80vw !important;
+  }
+
+  .col {
+    margin-left: 8rem;
+  }
+
+  a.footer-logo > img {
+    width: 70vw !important;
+    border-radius: 50%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  /* Contant Page*/
+  div.title-container > h2.title {
+    width: 45vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  section.volunteer-text {
+    margin: 1.5rem;
+  }
+
+  section.volunteer-text h2.title,
+  div.section-title h2.title {
+    font-size: 38px;
+    margin: 0 auto;
+  }
+
+  section.volunteer-text h2.title {
+    width: 80vw !important;
+  }
+
+  img#one {
+    object-fit: cover;
+    height: 19.5rem;
+    width: 199px;
+  }
+
+  .content p {
+    margin: 0 auto;
+    width: 70vw;
+  }
+}
