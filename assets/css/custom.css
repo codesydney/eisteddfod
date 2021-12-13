@@ -105,27 +105,27 @@ img.icons {
 /* =====================
   VISON WITH SPLASH OF INK BG
   ===================== */
-.vision-shape {
-  position: absolute;
-  filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
-    brightness(89%) contrast(86%);
-  left: -15px;
-  z-index: -1;
-  top: 60px;
-  width: 410px;
-  height: 70px;
+
+.title.vision-shape-bg {
+  background-image: url(../img/shape/banner-title-shape-colored.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 0.5rem;
+  text-shadow: -2px -2px 5px rgba(255, 255, 255, 1);
 }
 
-.illuminating {
-  position: relative;
-  stroke: 2px #000;
+.title.title.vision-shape-bg span {
+  -webkit-text-fill-color: #fff;
 }
 
-#text-gradient {
-  background: linear-gradient(to right, #fff 50%, #dc67dc 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.illuminating-word {
+  text-shadow: 0px -1px 5px rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .title.vision-shape-bg {
+    padding: 0;
+  }
 }
 
 /* =====================
@@ -171,7 +171,6 @@ img.icons {
 }
 
 .semi-circle path {
-  transform: scale(1.3);
   fill: transparent;
 }
 
@@ -182,7 +181,8 @@ img.icons {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   padding: 0;
-  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
 }
 
 .custom-badge-inner {
@@ -213,7 +213,7 @@ text {
   border-radius: 50%;
   width: 90%;
   opacity: 1;
-  z-index: -1;
+  /* z-index: -1; */
   padding: 1rem 1rem 0.5rem;
 }
 
@@ -275,15 +275,6 @@ a:focus {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-h2.title.vision {
-  background-image: url(../img/shape/banner-title-shape.png);
-  background-repeat: no-repeat;
-  filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
-    brightness(89%) contrast(86%);
-  /* color: #000000; */
-  /* text-shadow: 1px 2px white; */
 }
 
 .section-title .title span::-moz-ssselection {
