@@ -78,6 +78,10 @@ img.icons {
   color: #fff;
 }
 
+/********
+Testimonial
+********/
+
 .icon-box-item.item-one.mb-md-30 .content > .testimonial-content,
 .icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
 .icon-box-item.item-three .content > .testimonial-content {
@@ -100,6 +104,10 @@ img.icons {
 
 ::-webkit-scrollbar-thumb {
   background: #888; 
+}
+
+.preloader-wrap .preloader .dot {
+  background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
 }
 
 /* =====================
