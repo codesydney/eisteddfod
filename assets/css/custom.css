@@ -69,6 +69,64 @@ img.icons {
   color: white;
 }
 
+.img-separator {
+  position: absolute;
+  top: 165px;
+}
+
+.testimonial-content {
+  color: #fff;
+}
+
+/********
+Testimonial
+********/
+
+.icon-box-item.item-one.mb-md-30 .content > .testimonial-content,
+.icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
+.icon-box-item.item-three .content > .testimonial-content {
+  position: absolute;
+  top: 230px;
+  width: 300px;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 170px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.preloader-wrap .preloader .dot {
+  background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
+}
+
+/* =====================
+  GENERAL
+ ===================== */
+.colorful {
+  background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
+  color: #fff;
+  padding: 0.3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.colorful::selection,
+.colorful::-moz-selection {
+  -webkit-text-fill-color: #fff;
+}
+
 /* =====================
   SPACING
  ===================== */
@@ -86,6 +144,32 @@ img.icons {
 }
 
 /* =====================
+  VISON WITH SPLASH OF INK BG
+  ===================== */
+
+.title.vision-shape-bg {
+  background-image: url(../img/shape/banner-title-shape-colored.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 0.5rem;
+  text-shadow: -2px -2px 5px rgba(255, 255, 255, 1);
+}
+
+.title.title.vision-shape-bg span {
+  -webkit-text-fill-color: #fff;
+}
+
+.illuminating-word {
+  text-shadow: 0px -1px 5px rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .title.vision-shape-bg {
+    padding: 0;
+  }
+}
+
+/* =====================
   LIST
   ===================== */
 .list {
@@ -99,6 +183,87 @@ img.icons {
 
 .list li::marker {
   color: #e0ccdc;
+}
+
+/* =====================
+  SPONSORS AREA
+  ===================== */
+.sponsors-area {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .sponsors-area {
+    flex-direction: column;
+  }
+}
+
+/* =====================
+  BADGE
+  ===================== */
+.semi-circle {
+  position: absolute;
+  width: 100%;
+  transform: rotate(-98deg);
+}
+
+.semi-circle path {
+  fill: transparent;
+}
+
+.custom-badge {
+  border: 10px solid gold;
+  border-top-right-radius: 14%;
+  border-top-left-radius: 14%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 0;
+  min-width: 240px;
+  max-width: 240px;
+}
+
+.custom-badge-inner {
+  border: 5px solid #ffbb0c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 0.8rem 0.5rem 1.5rem;
+  position: relative;
+}
+
+text {
+  letter-spacing: 1px;
+}
+
+.custom-badge-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-badge .logo {
+  border-radius: 50%;
+  width: 90%;
+  opacity: 1;
+  /* z-index: -1; */
+  padding: 1rem 1rem 0.5rem;
+}
+
+.gold {
+  background-color: gold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 /* 3 cards */
@@ -153,15 +318,6 @@ a:focus {
   -webkit-text-fill-color: transparent;
 }
 
-h2.title.vision {
-  background-image: url(../img/shape/banner-title-shape.png);
-  background-repeat: no-repeat; 
-  filter: invert(21%) sepia(4%) saturate(821%) hue-rotate(260deg)
-    brightness(89%) contrast(86%);
-    color: #000000;
-    text-shadow: 1px 2px white;
-}
-
 .section-title .title span::-moz-ssselection {
   -webkit-text-fill-color: #fff;
 }
@@ -209,6 +365,7 @@ img.shape-img3,
   .subtitle-content
   h6 {
   background: linear-gradient(to right, #474480 0%, #baaab7 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -237,10 +394,17 @@ img.circle-img {
   .donate-circle-wrp {
   background-image: -ms-linear-gradient(-30deg, #474480 0%, #baaab7 100%);
   background: linear-gradient(-30deg, #474480 0%, #baaab7 100%);
+  width: 22.7rem;
+  height: 24rem;
 }
 
 div.about-us > p.mb-0.p-text {
   width: 50vw !important;
+}
+
+.pie-chart-circle canvas {
+  height: 300px !important;
+  width: 278px !important;
 }
 
 .about-area .about-content .text-style:before {
@@ -387,6 +551,61 @@ ul.nav-menu.nav.align-right {
   color: #e0ccdc;
 }
 
+.testimonials {
+  color: white;
+}
+
+.title-wrapper {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.title-wrapper h1 {
+  font-size: 60px;
+  line-height: 1.25;
+  text-shadow: 1px 3px lightgray !important;
+}
+
+.icon-box-item.item-one.mb-md-30,
+.icon-box-item.item-two.mb-md-30,
+.icon-box-item.item-three {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 470px;
+}
+
+.separator-line {
+  width: 5vw;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.icon-box-style1 .icon-box-item .content p {
+  width: inherit;
+  color: white;
+}
+
+.about {
+  color: white;
+}
+
+h4.testimonial-name.about,
+h6.testimonial-sponsor.about {
+  font-weight: 300;
+  font-family: "Roboto";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h4.testimonial-name.about,
+h6.testimonial-sponsor.about {
+  text-align: center;
+}
+
+.row.icon-box-style1.aos-init.aos-animate {
+  margin-top: 5rem;
+}
 @media screen and (max-width: 600px) {
   /* 600px */
   /* Home Page */
