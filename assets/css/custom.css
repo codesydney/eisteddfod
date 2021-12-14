@@ -69,11 +69,6 @@ img.icons {
   color: white;
 }
 
-.img-separator {
-  position: absolute;
-  top: 165px;
-}
-
 .testimonial-content {
   color: #fff;
 }
@@ -99,11 +94,11 @@ Testimonial
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 .preloader-wrap .preloader .dot {
@@ -309,10 +304,8 @@ a:focus {
 }
 
 .section-title .title span {
-  /* background: var(--purple-linear-gradient); */
   background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
   font-family: "Yeseva One", cursive;
-  /* font-weight: 600; */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -517,10 +510,6 @@ section.volunteer-text {
   margin: 5rem;
 }
 
-/* .title-container {
-  margin: 2rem;
-} */
-
 div.title-container > h2.title {
   width: 45vw;
   font-size: 60px;
@@ -574,6 +563,15 @@ ul.nav-menu.nav.align-right {
   height: 470px;
 }
 
+/*******************
+  Testimonials Section
+  *******************/
+/* causes an issue in mobile view*/
+.img-separator {
+  position: absolute;
+  top: 165px;
+}
+
 .separator-line {
   width: 5vw;
   margin: 0 auto;
@@ -607,8 +605,9 @@ h6.testimonial-sponsor.about {
   margin-top: 5rem;
 }
 @media screen and (max-width: 600px) {
-  /* 600px */
-  /* Home Page */
+  /*********
+   Home Page 
+  **********/
   h1.title {
     text-align: center;
   }
@@ -621,7 +620,9 @@ h6.testimonial-sponsor.about {
     width: 75vw;
   }
 
-  /* Hide button in mobile view */
+  /*****************************************
+   Hide Enter Stardom Button in Mobile View 
+  ******************************************/
   a.btn-theme.btn-gradient.btn-slide.btn-style {
     display: none;
   }
@@ -644,7 +645,9 @@ h6.testimonial-sponsor.about {
     margin: 0 auto;
   }
 
-  /* About Us page*/
+  /*************
+   About Us Page 
+  **************/
   h2.title.org {
     margin: 0 auto;
   }
@@ -699,5 +702,33 @@ h6.testimonial-sponsor.about {
   .content p {
     margin: 0 auto;
     width: 70vw;
+  }
+
+  /*******************
+  Testimonials Section
+  *******************/
+  .title-wrapper h1 {
+    font-size: 38px;
+    line-height: 1.25;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 2px lightgray !important;
+  }
+
+  .img-separator {
+    position: relative;
+    top: 5px;
+    right: 25px;
+  }
+  .icon-box-item.item-one.mb-md-30 .content > .testimonial-content,
+  .icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
+  .icon-box-item.item-three .content > .testimonial-content {
+    position: relative;
+    top: 10px; /**/
+    width: 280px;
+    padding: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 170px;
   }
 }
