@@ -18,9 +18,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* body {
-  font-size: 1.4375 !important;
-} */
+.privacy-row{
+  padding-bottom: 250px;
+}
 
 a {
   color: #474480;
