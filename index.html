@@ -39,7 +39,7 @@
   <link href="assets/css/custom.css" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="getRandomInt();" >
 
   <!--wrapper start-->
   <div class="wrapper home-default-wrapper">
@@ -280,17 +280,9 @@
             <div class="col-md-12 col-lg-7 col-xl-6">
               <div class="testimonial-content" data-aos="fade-up" data-aos-duration="1000">
                 <div class="testimonial-slider-content">
-                  <!--
-                    <div class="swiper-container testimonial-slider-container">
-                      <div class="swiper-wrapper testimonial-slider">
-                          <div class="swiper-slide testimonial-single"></div>
-                        </div>
-                    </div>
-                  -->
                   <div class="swiper-container testimonial-slider-container">
                     <div class="swiper-wrapper testimonial-slider">
                       <div class="swiper-slide welcome-content">
-                        <!--<div class="client-thumb-wrp"></div> class="welcome-wrapper" class="welcome-content" -->
                         <div class="client-content">
                           <h1 class='title'>Welcome</h1>
                           <p class='text p-text'>
@@ -498,6 +490,7 @@
           </div>
 
           <div class="row icon-box-style1" data-aos="fade-up" data-aos-duration="1000">
+
             <div class="col-md-6 col-lg-4">
               <div class="icon-box-item item-one mb-md-30">
                 <div class="content-wrapper">
@@ -553,9 +546,37 @@
                 </div>
 
 
+
               </div>
             </div>
 
+            <div class="col-md-6 col-lg-4">
+              <div class="icon-box-item item-three">
+                <div class="content-wrapper">
+                  <div class="testimonial-heading">
+                    <h4 class="testimonial-name about">Brendan Atkins</h4>
+                    <h6 class="testimonial-sponsor about">Eisteddfod Participant from age 3&nbsp;</h6>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="separator-line">
+                    <img class='img-separator' src="assets/img/shape/line-s1.png" alt="Givest-HasTech">
+                  </div>
+                  <div class="testimonial-content">
+                    <div>
+                      <p>
+                        "My debut in the Parramatta Eisteddfod was at three years when, as part of the
+                        Carlingford Youth Drama School, I recited the Tele Monster and Dr Paul March
+                        was the adjudicator. I competed annually up until 2014 when as a teenager I
+                        won the 15-25years Scholarship. Now I enjoy helping as Stage Manager so
+                        other young people can enjoy and benefit
+                        from this wonderful competition."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
 
@@ -575,25 +596,26 @@
               </div>
             </div>
             <!-- Start Sponsor Badges -->
-              <div class="custom-badge">
-                <div class="custom-badge-inner">
-                  <svg class="semi-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+            <div class="custom-badge">
+              <div class="custom-badge-inner">
+                <svg class="semi-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 200 200">
                   <defs>
-                      <path d="M130,37c34.8,0,55,38.2,52,70s-28.2,63-63,63s-63-28.2-63-63S65.2,37,100,37z" id="textscircle" />
-                    </defs>
+                    <path d="M130,37c34.8,0,55,38.2,52,70s-28.2,63-63,63s-63-28.2-63-63S65.2,37,100,37z"
+                      id="textscircle" />
+                  </defs>
                   <text>
-                      <textPath xlink:href="#textscircle">Holroyd City Lions Club Inc</textPath>
+                    <textPath xlink:href="#textscircle">Holroyd City Lions Club Inc</textPath>
                   </text>
-                  </svg>
-                  <div class="custom-badge-logo-container">
-                    <img class="logo" src="assets/img/brand-logo/lion-club-logo.jpeg"
-                    alt="Holroyd City Lions Club Inc">
-                  </div>
-                  <div class="badge-name">
-                    <span class="gold bold">Gold</span>
-                  </div>
+                </svg>
+                <div class="custom-badge-logo-container">
+                  <img class="logo" src="assets/img/brand-logo/lion-club-logo.jpeg" alt="Holroyd City Lions Club Inc">
+                </div>
+                <div class="badge-name">
+                  <span class="gold bold">Gold</span>
                 </div>
               </div>
+            </div>
             <!-- End Sponsor Badges -->
           </div>
         </div>
@@ -739,7 +761,17 @@
 
   <!--=== Custom Js ===-->
   <script src="assets/js/custom.js"></script>
+  <script type="text/javascript">
+    function getRandomInt() {
+      const color = ['#baaab7', '#474480', '#001d23'];
+      let content = document.getElementsByClassName('icon-box-item');
 
+      for(let i = 0; i < content.length; i++) {
+        let randomIndex = Math.floor(Math.random() * color.length);
+        content[i].style.backgroundColor = color[randomIndex];
+      }
+    }
+  </script>
 </body>
 
 </html>
