@@ -732,3 +732,106 @@ h6.testimonial-sponsor.about {
     height: 170px;
   }
 }
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*****************************************
+   Hide Enter Stardom Button in Mobile View 
+  ******************************************/
+  a.btn-theme.btn-gradient.btn-slide.btn-style {
+    display: none;
+  }
+
+  li {
+    display: block !important;
+  }
+
+  /* ----------- Home Page ----------- */
+  .pie-chart-circle canvas {
+    height: 170px !important;
+    width: 165px !important;
+  }
+
+  .home-slider-area.slider-default
+    .slider-content-area
+    .layer-style
+    .donate-circle-wrp {
+    width: 11.7rem;
+    height: 12rem;
+  }
+
+  .about-area .about-content .text-style {
+    width: 65vw;
+  }
+
+  .p-text {
+    font-size: 1.5rem;
+    width: 80vw;
+    font-weight: 300;
+  }
+
+  .client-content h1 {
+    text-align: center;
+  }
+  .welcome-content .client-content p {
+    line-height: 1.6;
+    width: 68vw;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-right: auto;
+  }
+
+  .testimonial-slider-container .navigation-wrp {
+    position: inherit;
+  }
+
+  .title-wrapper h1 {
+    text-align: center;
+  }
+
+  p.text.p-text {
+    text-align: center;
+  }
+
+  /*******************
+  Testimonials Section
+  *******************/
+  .title-wrapper h1 {
+    font-size: 38px;
+    line-height: 1.25;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 2px lightgray !important;
+  }
+
+  .img-separator {
+    position: relative;
+    top: 5px;
+    right: 25px;
+  }
+
+  .icon-box-item.item-one.mb-md-30 .content > .testimonial-content,
+  .icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
+  .icon-box-item.item-three .content > .testimonial-content {
+    position: relative;
+    top: 10px; /**/
+    width: 280px;
+    padding: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 170px;
+  }
+
+  /*******************
+  Footer Section
+  *******************/
+  div#empty-div {
+    display: none;
+  }
+
+
+  /* ----------- About Us Page ----------- */
+  
+}
