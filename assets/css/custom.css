@@ -832,6 +832,10 @@ h6.testimonial-sponsor.about {
     display: none;
   }
 
+  iframe#homepage-map {
+    width: 90vw;
+  }
+
 
   /* ----------- About Us Page ----------- */
   section.volunteer-text h2.title,
