@@ -127,7 +127,7 @@
       </section>
       <!--== End Page Title Area ==-->
 
-     
+
 
       <!--== Start Contact Area ==-->
       <section class="contact-area">
@@ -136,14 +136,12 @@
             <div class="col-lg-12">
               <div class="contact-colunm">
                 <div class="contact-form">
-                  <form class="contact-form-wrapper" id="contact-form"
-                    action="http://whizthemes.com/mail-php/raju/arden/mail.php" method="post">
+                  <form class="contact-form-wrapper" id="contact-form" method="post">
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="section-title">
                           <h5 class="subtitle line-theme-color">Contact Now</h5>
                           <h2 class="title">Get In Touch.</h2>
-
                         </div>
                       </div>
                     </div>
@@ -152,22 +150,23 @@
                         <div class="row row-gutter-20">
                           <div class="col-md-12">
                             <div class="form-group">
-                              <input class="form-control" type="text" name="con_name" placeholder="Name">
+                              <input class="form-control" required type="text" name="from_name" placeholder="Name">
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <input class="form-control" type="email" name="con_email" placeholder="Email">
+                              <input class="form-control" required type="email" name="from_email" placeholder="Email">
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <input class="form-control" type="text" name="con_phone" placeholder="Phone">
+                              <input class="form-control" type="text" onchange="PhoneNumberFormatter(this.value)"
+                                id="phone" name=" from_phone" maxlength="10" placeholder="Phone" value=''>
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group mb-0">
-                              <textarea class="form-control textarea" name="con_message"
+                              <textarea class="form-control textarea" required name="message"
                                 placeholder="Message"></textarea>
                             </div>
                           </div>
@@ -183,7 +182,9 @@
                   </form>
                 </div>
                 <!-- Message Notification -->
-                <div class="form-message"></div>
+                <div class="form-error-message">
+                </div>
+                <div id="snackbar"></div>
                 <div class="contact-map-area">
                   <div class="contact-info-content">
                     <div class="contact-info-item">
@@ -206,24 +207,9 @@
                         <h4>Email</h4>
                         <img class="line-icon" src="assets/img/shape/line-s1.png" alt="Image-Givest">
                         <a
-                          href="mailto:diserens@optusnet.com.au?subject=Eisteddfod Enquiry">diserens@optusnet.com.au</a>
-                        <a
-                          href="mailto:hmmarchant@optusnet.com.au?subject=Eisteddfod Enquiry">hmmarchant@optusnet.com.au</a>
-                        <a href="mailto:ehodda@bigpond.com?subject=Eisteddfod Enquiry">ehodda@bigpond.com</a>
+                          href="mailto:info@eisteddfodparramatta.org.au">info@eisteddfodparramatta.org.au</a>
                       </div>
                     </div>
-                    <!--
-                      <div class="contact-info-item mb-0 pb-0">
-                      <div class="icon icon-location">
-                        <img class="icon-img" src="assets/img/icons/c3.png" alt="Icon">
-                      </div>
-                      <div class="content">
-                        <h4>Address</h4>
-                        <img class="line-icon" src="assets/img/shape/line-s1.png" alt="Image-Givest">
-                        <p>Norwegian St #APT 807 <br>Pottsville, Pennsya (PA)</p>
-                      </div>
-                    </div>
-                    -->
                   </div>
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10509.041425959356!2d150.99962617665204!3d-33.814274521622266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a33c42b9ef23%3A0x4188a310e5696d8c!2sCity%20of%20Parramatta%20Council%2C%20NSW!5e0!3m2!1sen!2sau!4v1638514949254!5m2!1sen!2sau"
@@ -234,6 +220,7 @@
           </div>
         </div>
       </section>
+
       <!--== End Contact Area ==-->
     </main>
 
@@ -253,7 +240,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div id='empty-div' class="col-sm-6 col-md-6 col-lg-4 col-xl-4"></div>
 
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
@@ -291,7 +278,7 @@
               <div class="col-12">
                 <div class="widget-copyright text-center">
                   Handcoded with
-                  <i class="fa fa-heart" style="font-size:12px;color:red"></i> by 
+                  <i class="fa fa-heart" style="font-size:12px;color:red"></i> by
                   <a href="http://code.sydney/" target="_blank" style='color: lightskyblue; font-weight: bold'>
                     Code.Sydney
                   </a>
@@ -377,6 +364,52 @@
   <!--=== Custom Js ===-->
   <script src="assets/js/custom.js"></script>
 
+  <!--=== Email JS ===-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_nEmQ6yi4aBPvlCKCkUAfK");
+    })();
+  </script>
+
+  <script type="text/javascript">
+
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const serviceID = "service_j36huym";
+        const templateID = "template_odfjuaj";
+
+        let snackBar = document.getElementById("snackbar");
+
+        // send the email here
+        emailjs.sendForm(serviceID, templateID, this)
+          .then((response) => {
+            snackBar.innerText = "Email Sent.";
+            snackBar.className = "show";
+          })
+          .catch((error) => {
+            snackBar.innerText = "An error occurred and your message could not be sent.";
+            snackBar.className = "show";
+          })
+          .finally(() => {
+            setTimeout(function () { snackBar.classList.remove("show"); }, 3000);
+          });
+      });
+  </script>
+  <script>
+    let phoneNumber = document.getElementById('phone');
+      phoneNumber.addEventListener('input', PhoneNumberFormatter);
+      
+    function PhoneNumberFormatter(e) {
+      const value = e.target.value;
+      phoneNumber.value = value.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
+    }
+
+  </script>
 </body>
 
 </html>
