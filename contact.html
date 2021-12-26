@@ -150,23 +150,23 @@
                         <div class="row row-gutter-20">
                           <div class="col-md-12">
                             <div class="form-group">
-                              <input class="form-control" required type="text" name="from_name" placeholder="Name">
+                              <input class="form-control" required type="text" id="from_name" name="from_name" placeholder="Name">
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <input class="form-control" required type="email" name="from_email" placeholder="Email">
+                              <input class="form-control" required type="email" id="from_email" name="from_email" placeholder="Email">
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
                               <input class="form-control" type="text" onchange="PhoneNumberFormatter(this.value)"
-                                id="phone" name=" from_phone" maxlength="10" placeholder="Phone" value=''>
+                                id="from_phone" name="from_phone" maxlength="10" placeholder="Phone" value=''>
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group mb-0">
-                              <textarea class="form-control textarea" required name="message"
+                              <textarea class="form-control textarea" required id="message" name="message"
                                 placeholder="Message"></textarea>
                             </div>
                           </div>
@@ -374,7 +374,6 @@
   </script>
 
   <script type="text/javascript">
-
     document
       .getElementById("contact-form")
       .addEventListener("submit", function (event) {
@@ -384,6 +383,10 @@
         const templateID = "template_odfjuaj";
 
         let snackBar = document.getElementById("snackbar");
+        let from_name = document.getElementById("from_name");
+        let from_email = document.getElementById("from_email");
+        let from_phone = document.getElementById("from_phone");
+        let message = document.getElementById("message");
 
         // send the email here
         emailjs.sendForm(serviceID, templateID, this)
@@ -396,12 +399,16 @@
             snackBar.className = "show";
           })
           .finally(() => {
+            from_name.value = "";
+            from_email.value = "";
+            from_phone.value = "";
+            message.value = "";
             setTimeout(function () { snackBar.classList.remove("show"); }, 3000);
           });
       });
   </script>
   <script>
-    let phoneNumber = document.getElementById('phone');
+    let phoneNumber = document.getElementById('from_phone');
       phoneNumber.addEventListener('input', PhoneNumberFormatter);
       
     function PhoneNumberFormatter(e) {
