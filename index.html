@@ -268,7 +268,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-lg-4 col-xl-5">
-              <div class="title-wrp" data-bg-img="assets/img/testimonial/bg-testi1.jpg" data-aos="fade-right"
+              <div class="title-wrp" data-aos="fade-right"
                 data-aos-duration="1000">
                 <div class="section-title">
                   <h5 class="subtitle line-white-color text-white mb-7">Updates</h5>
@@ -301,7 +301,7 @@
                             Pieces are not available via Stardom.) Cost $10 for full set or $2 per page. The syllabus
                             contains details on how to order and pay by EFT for set pieces.
                           </p>
-                          <p class='text p-text'>
+                          <p class='text p-text' id='covid-safety'>
                             <em>Covid-19 Safety Plan:</em> The City of Parramatta Eisteddfod Society Inc. has a
                             registered <a
                               href="https://www.eisteddfodparramatta.org.au/downloads/covid19_safety_plan_feb2021.pdf"
@@ -764,11 +764,11 @@
   <script src="assets/js/custom.js"></script>
   <script type="text/javascript">
     function applyRandomColor() {
-      const color = ['#baaab7', '#474480', '#001d23'];
+      const color = ['#6B5667', '#474480', '#001d23', '#386a75', '#613a34', '#7f7147', '#205b40'];
       let content = document.getElementsByClassName('icon-box-item');
 
       for(let i = 0; i < content.length; i++) {
-        let randomIndex = Math.floor(Math.random() * color.length);
+        let randomIndex = Math.floor(Math.random() * color.length) + 1;
         content[i].style.backgroundColor = color[randomIndex];
       }
     }
