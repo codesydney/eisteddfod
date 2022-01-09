@@ -18,7 +18,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-
 a {
   color: #474480;
   font-weight: 600;
@@ -81,8 +80,10 @@ Testimonial
   top: 230px;
   width: 300px;
   padding: 1rem;
+  /*
   overflow-y: scroll;
   overflow-x: hidden;
+  */
   height: 170px;
 }
 
@@ -269,7 +270,6 @@ text {
 }
 
 img.img-shape,
-img.icon-img,
 img.shape-img,
 img.icon,
 img.line-shape,
@@ -379,7 +379,7 @@ img.circle-img {
 }
 
 .icon-box-style1 .icon-box-item.item-three {
-  background-color: #baaab7;
+  background-color: #6b5667;
 }
 
 .home-slider-area.slider-default
@@ -561,7 +561,7 @@ ul.nav-menu.nav.align-right {
 .icon-box-item.item-three {
   padding-left: 1rem;
   padding-right: 1rem;
-  height: 470px;
+  height: 44rem;
 }
 
 /*******************
@@ -605,6 +605,16 @@ h6.testimonial-sponsor.about {
 .row.icon-box-style1.aos-init.aos-animate {
   margin-top: 5rem;
 }
+
+.testimonial-slider-container .navigation-wrp {
+  background-color: #494685;
+}
+
+.testimonial-slider-container .swiper-button-next,
+.testimonial-slider-container .swiper-button-prev {
+  border: 2px solid #fff;
+}
+
 @media screen and (max-width: 600px) {
   /*********
    Home Page 
@@ -725,11 +735,13 @@ h6.testimonial-sponsor.about {
   .icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
   .icon-box-item.item-three .content > .testimonial-content {
     position: relative;
-    top: 10px; /**/
+    top: 10px;
     width: 280px;
     padding: 1rem;
+    /*
     overflow-y: scroll;
     overflow-x: hidden;
+    */
     height: 170px;
   }
 }
@@ -763,29 +775,62 @@ h6.testimonial-sponsor.about {
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.testimonial-slider-container .navigation-wrp {
+  background-color: #494685;
+}
+
+.testimonial-slider-container .swiper-button-next,
+.testimonial-slider-container .swiper-button-prev {
+  border: 2px solid #fff;
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   /*****************************************
    Hide Enter Stardom Button in Mobile View 
   ******************************************/
@@ -865,11 +910,13 @@ h6.testimonial-sponsor.about {
   .icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
   .icon-box-item.item-three .content > .testimonial-content {
     position: relative;
-    top: 10px; /**/
+    top: 10px;
     width: 280px;
     padding: 1rem;
+    /*
     overflow-y: scroll;
     overflow-x: hidden;
+    */
     height: 170px;
   }
 
@@ -884,7 +931,6 @@ h6.testimonial-sponsor.about {
     width: 90vw;
   }
 
-
   /* ----------- About Us Page ----------- */
   section.volunteer-text h2.title,
   div.section-title h2.title {
@@ -895,5 +941,83 @@ h6.testimonial-sponsor.about {
   .thumb.thumb-style {
     width: 48vw;
     margin: 0 auto;
+  }
+
+  .testimonial-slider-container .navigation-wrp {
+    background-color: #494685;
+  }
+
+  .testimonial-slider-container .swiper-button-next,
+  .testimonial-slider-container .swiper-button-prev {
+    border: 2px solid #fff;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  a.btn-theme.btn-gradient.btn-slide.btn-style {
+    display: none;
+  }
+
+  li {
+    display: block !important;
+  }
+
+  /* ----------- Home Page ----------- */
+  .pie-chart-circle canvas {
+    height: 170px !important;
+    width: 165px !important;
+  }
+
+  .home-slider-area.slider-default
+    .slider-content-area
+    .layer-style
+    .donate-circle-wrp {
+    width: 11.7rem;
+    height: 12rem;
+  }
+
+  .about-area .about-content .text-style {
+    width: 40vw !important;
+  }
+
+  .client-content h1 {
+    text-align: center;
+  }
+  .welcome-content .client-content p {
+    line-height: 1.6;
+    width: 58vw;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-right: auto;
+  }
+
+  .icon-box-item.item-one.mb-md-30 .content > .testimonial-content,
+  .icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
+  .icon-box-item.item-three .content > .testimonial-content {
+    position: absolute;
+    top: 230px;
+    width: 250px;
+    padding: 1rem;
+    height: 170px;
+  }
+
+  .img-separator {
+    position: absolute;
+    top: 185px;
+  }
+
+  p#covid-safety {
+    position: relative;
+    right: 20rem;
+  }
+
+  .testimonial-slider-container .navigation-wrp {
+    background-color: #494685;
+  }
+
+  .testimonial-slider-container .swiper-button-next,
+  .testimonial-slider-container .swiper-button-prev {
+    border: 2px solid #fff;
   }
 }
