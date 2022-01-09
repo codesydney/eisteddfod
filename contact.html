@@ -150,12 +150,14 @@
                         <div class="row row-gutter-20">
                           <div class="col-md-12">
                             <div class="form-group">
-                              <input class="form-control" required type="text" id="from_name" name="from_name" placeholder="Name">
+                              <input class="form-control" required type="text" id="from_name" name="from_name"
+                                placeholder="Name">
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <input class="form-control" required type="email" id="from_email" name="from_email" placeholder="Email">
+                              <input class="form-control" required type="email" id="from_email" name="from_email"
+                                placeholder="Email">
                             </div>
                           </div>
                           <div class="col-md-12">
@@ -170,6 +172,21 @@
                                 placeholder="Message"></textarea>
                             </div>
                           </div>
+
+                          <div class="col-md-12">
+                            <div class="form-group mb-0">
+                              <p id='privacy-policy-lv'>
+                                By submitting this form, you agree to receive emails from
+                                The City Of Parramatta Eisteddfod Society Inc. any time.
+                                See our full <a class="link"
+                                  href="assets/downloads/Parramatta Eisteddfod Privacy Policy V1.pdf" target="_blank">
+                                  Privacy Policy
+                                  <i class="icofont-file-pdf"></i>
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+
                           <div class="col-md-12">
                             <div class="form-group mb-0">
                               <button class="btn-theme btn-gradient btn-slide no-border" type="submit">Submit
@@ -194,9 +211,22 @@
                       <div class="content">
                         <h4>Phone</h4>
                         <img class="line-icon" src="assets/img/shape/line-s1.png" alt="Image-Givest">
-                        <a>0423 522 521</a>
-                        <a>9636 7509</a>
-                        <a>0409 604 076</a>
+                        <div class='contacts'>
+                          <table id='contacts-content'>
+                            <tr>
+                              <td>Sue Diserens</td>
+                              <td>0423 522 521</td>
+                            </tr>
+                            <tr>
+                              <td>Helen Marchant</td>
+                              <td>9636 7509</td>
+                            </tr>
+                            <tr>
+                              <td>Elaine Hodda</td>
+                              <td>0409 604 076</td>
+                            </tr>
+                          </table>
+                        </div>
                       </div>
                     </div>
                     <div class="contact-info-item">
@@ -206,8 +236,7 @@
                       <div class="content">
                         <h4>Email</h4>
                         <img class="line-icon" src="assets/img/shape/line-s1.png" alt="Image-Givest">
-                        <a
-                          href="mailto:info@eisteddfodparramatta.org.au">info@eisteddfodparramatta.org.au</a>
+                        <a href="mailto:info@eisteddfodparramatta.org.au">info@eisteddfodparramatta.org.au</a>
                       </div>
                     </div>
                   </div>
@@ -409,8 +438,8 @@
   </script>
   <script>
     let phoneNumber = document.getElementById('from_phone');
-      phoneNumber.addEventListener('input', PhoneNumberFormatter);
-      
+    phoneNumber.addEventListener('input', PhoneNumberFormatter);
+
     function PhoneNumberFormatter(e) {
       const value = e.target.value;
       phoneNumber.value = value.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
