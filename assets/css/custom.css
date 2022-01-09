@@ -153,11 +153,25 @@ Testimonial
 }
 
 .illuminating-word {
-  text-shadow: 0px -1px 5px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 8px rgb(0 0 0), 0px 2px 10px rgb(0 0 0),2px 2px 8px rgb(0 0 0),2px 2px 8px rgb(0 0 0);
 }
 
 .footer-area .footer-main .scroll-to-top {
   background: var(--purple-linear-gradient);
+}
+
+table#contacts-content tr > td {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.723;
+  position: relative;
+  top: 1rem;
+  left: -6rem;
+}
+
+p#privacy-policy-lv {
+  padding: 1rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -187,7 +201,7 @@ Testimonial
   ===================== */
 .sponsors-area {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: row;
   align-items: center;
   padding-right: 1rem;
@@ -505,6 +519,14 @@ h2.commitee-title {
 /* Contact Page */
 .contact-info-content {
   background: var(--purple-linear-gradient) !important;
+}
+
+table#contacts-content {
+  width: 17rem;
+}
+
+table#contacts-content tr > td {
+  top: 2rem;
 }
 
 section.volunteer-text {
