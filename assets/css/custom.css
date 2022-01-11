@@ -153,7 +153,8 @@ Testimonial
 }
 
 .illuminating-word {
-  text-shadow: 2px 2px 8px rgb(0 0 0), 0px 2px 10px rgb(0 0 0),2px 2px 8px rgb(0 0 0),2px 2px 8px rgb(0 0 0);
+  text-shadow: 2px 2px 8px rgb(0 0 0), 0px 2px 10px rgb(0 0 0),
+    2px 2px 8px rgb(0 0 0), 2px 2px 8px rgb(0 0 0);
 }
 
 .footer-area .footer-main .scroll-to-top {
@@ -190,12 +191,26 @@ p#privacy-policy-lv {
 
 .list li {
   list-style: disc;
+  display: list-item !important;
 }
 
 .list li::marker {
   color: #e0ccdc;
 }
 
+.custom-list {
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+.custom-list li {
+  list-style: disc;
+  display: list-item !important;
+}
+
+.custom-list li::marker {
+  color: #e0ccdc;
+}
 /* =====================
   SPONSORS AREA
   ===================== */
@@ -205,11 +220,56 @@ p#privacy-policy-lv {
   flex-direction: row;
   align-items: center;
   padding-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.sponsors-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  gap: 3rem 3rem;
+}
+
+.tier-title {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bg-platinum {
+  background-color: #e5e4e2;
+}
+
+.bg-gold {
+  background-color: gold;
+}
+
+.bg-silver {
+  background-color: #bec0c2;
+}
+
+.bg-purple {
+  background-color: #e0ccdc;
+}
+
+.bg-major {
+  background-color: #deeaf6;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 15rem;
 }
 
 @media screen and (max-width: 990px) {
   .sponsors-area {
     flex-direction: column;
+  }
+
+  .sponsors-list {
+    grid-template-columns: 1fr;
   }
 }
 
