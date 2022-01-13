@@ -380,6 +380,7 @@ a:focus {
 
 .section-title .title #span {
   background: linear-gradient(to right, #dc67dc 0%, #7c39d9 30%, #7c39d9 100%);
+  display: inline;
   font-family: "Yeseva One", cursive;
   background-clip: text;
   -webkit-background-clip: text;
