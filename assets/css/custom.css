@@ -384,6 +384,7 @@ a:focus {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 2.7rem;
 }
 
 .section-title .title span::-moz-ssselection {
