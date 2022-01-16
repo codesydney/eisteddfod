@@ -703,6 +703,7 @@ h6.testimonial-sponsor.about {
   **********/
   h1.title {
     text-align: center;
+    margin-bottom: 10%;
   }
   .welcome-content .client-content p {
     color: #fff;
@@ -909,6 +910,47 @@ h6.testimonial-sponsor.about {
   }
 }
 
+/* ----------- iPhone ----------- */
+
+@media only screen and (max-width: 479.98px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  section.testimonial-area.testimonial-default-area.bgcolor-theme3 {
+    height: 95rem !important;
+  }
+
+  .testimonial-slider-container .navigation-wrp {
+    display: block;
+    top: 60rem !important;
+    left: calc(40% + 1px);
+  }
+
+  .icon-box-item.item-one.mb-md-30,
+  .icon-box-item.item-two.mb-md-30,
+  .icon-box-item.item-three {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 38rem;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  .icon-box-item.item-one.mb-md-30 .content > .testimonial-content,
+  .icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
+  .icon-box-item.item-three .content > .testimonial-content {
+    position: relative !important;
+    top: 0px !important;
+    width: 250px;
+    padding: 1rem;
+    height: 170px;
+  }
+
+  .img-separator {
+    position: relative !important;
+    top: 10px !important;
+    right: 25px !important;
+  }
+}
+
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait and Landscape */
@@ -995,10 +1037,6 @@ h6.testimonial-sponsor.about {
     top: 10px;
     width: 280px;
     padding: 1rem;
-    /*
-    overflow-y: scroll;
-    overflow-x: hidden;
-    */
     height: 170px;
   }
 
