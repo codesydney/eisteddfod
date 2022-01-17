@@ -643,7 +643,7 @@ ul.nav-menu.nav.align-right {
 .icon-box-item.item-three {
   padding-left: 1rem;
   padding-right: 1rem;
-  height: 44rem;
+  height: 38rem;
 }
 
 /*******************
@@ -910,16 +910,21 @@ h6.testimonial-sponsor.about {
   }
 }
 
+
 /* ----------- iPhone ----------- */
 
-@media only screen and (max-width: 479.98px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-width: 479.98px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .about-area .about-content .text-style {
+    font-size: 20px;
+  }
+
   section.testimonial-area.testimonial-default-area.bgcolor-theme3 {
     height: 95rem !important;
   }
 
   .testimonial-slider-container .navigation-wrp {
     display: block;
-    top: 60rem !important;
+    top: 63rem !important;
     left: calc(40% + 1px);
   }
 
@@ -934,6 +939,28 @@ h6.testimonial-sponsor.about {
 }
 
 @media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  .about-area .about-content .text-style {
+    width: 70vw !important;
+    font-size: 26px;
+  }
+
+  section.testimonial-area.testimonial-default-area.bgcolor-theme3 {
+    height: 77rem !important;
+  }
+
+  p#covid-safety {
+    position: inherit !important;
+  }
+
+  .testimonial-slider-container .navigation-wrp {
+    top: 550px;
+  }
+  
+  .p-text {
+    font-size: 1rem !important;
+    font-weight: 300 !important;
+  }
+
   .icon-box-item.item-one.mb-md-30 .content > .testimonial-content,
   .icon-box-item.item-two.mb-md-30 .content > .testimonial-content,
   .icon-box-item.item-three .content > .testimonial-content {
@@ -952,6 +979,14 @@ h6.testimonial-sponsor.about {
 }
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .icon-box-item.item-one.mb-md-30, 
+  .icon-box-item.item-two.mb-md-30, 
+  .icon-box-item.item-three {
+    height: 42rem;
+  }
+}
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1013,6 +1048,7 @@ h6.testimonial-sponsor.about {
     text-align: center;
   }
 
+  
   /*******************
   Testimonials Section
   *******************/
@@ -1098,7 +1134,7 @@ h6.testimonial-sponsor.about {
   }
 
   .about-area .about-content .text-style {
-    width: 40vw !important;
+    width: 40vw ;
   }
 
   .client-content h1 {
