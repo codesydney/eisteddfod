@@ -99,6 +99,7 @@ img.icons {
 
 .list li::marker {
   color: #e0ccdc;
+
 }
 
 /* 3 cards */
@@ -385,6 +386,10 @@ ul.nav-menu.nav.align-right {
 .main-menu > li:hover > a,
 .main-menu > li.active > a {
   color: #e0ccdc;
+}
+
+.terms {
+  font-size:0.75rem;
 }
 
 @media screen and (max-width: 600px) {
