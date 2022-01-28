@@ -125,7 +125,7 @@ Testimonial
 /* =====================
   LAYOUT
  ===================== */
-.container {
+.content-container {
   width: 90%;
   max-width: 1280px;
   margin-right: auto;
@@ -133,7 +133,7 @@ Testimonial
 }
 
 @media screen and (max-width: 991px) {
-  .container {
+  .content-container {
     width: 85%;
   }
 }
