@@ -281,6 +281,10 @@ p#privacy-policy-lv {
   gap: 3rem 3rem;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .tier-title {
   font-size: 1.5rem;
   padding: 1rem;
@@ -317,6 +321,10 @@ p#privacy-policy-lv {
   justify-content: center;
   margin: 0 auto;
   width: 12.5rem;
+}
+
+.btn-no-border {
+  border: none;
 }
 
 @media screen and (max-width: 990px) {
