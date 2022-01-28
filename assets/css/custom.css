@@ -123,10 +123,44 @@ Testimonial
 }
 
 /* =====================
+  LAYOUT
+ ===================== */
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 85%;
+  }
+}
+
+/* =====================
   SPACING
  ===================== */
 .mt-5rem {
   margin-top: 5rem;
+}
+
+.section-gap {
+  margin-top: 3.75rem;
+}
+
+.content-gap {
+  margin-bottom: 1.5rem;
+}
+
+.empty-gap {
+  margin-top: 14rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section-gap {
+    margin-top: 2.5rem;
+  }
 }
 
 /* =====================
@@ -145,6 +179,12 @@ Testimonial
 .semi-bold {
   font-weight: 400;
   font-size: 1.4375rem;
+}
+
+@media screen and (max-width: 330px) {
+  .semi-bold {
+    font-size: 1.2rem;
+  }
 }
 
 /* =====================
@@ -196,13 +236,14 @@ p#privacy-policy-lv {
   LIST
   ===================== */
 .list {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-top: 0;
 }
 
 .list li {
   list-style: disc;
   display: list-item !important;
+  margin-top: 1.5rem;
 }
 
 .list li::marker {

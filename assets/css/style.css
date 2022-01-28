@@ -260,6 +260,7 @@ table p {
 .section-title .title span {
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -688,6 +689,7 @@ table p {
   background-color: transparent;
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -717,6 +719,7 @@ table p {
   display: block;
   background: #fea444;
   background: linear-gradient(to left, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.3s;
@@ -3826,6 +3829,7 @@ table p {
   margin: 0;
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -5103,6 +5107,7 @@ table p {
 .team-member .content .member-info .name a:hover {
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -5294,6 +5299,7 @@ table p {
   font-size: 20px;
   background: #fea444;
   background: linear-gradient(to left, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -5534,6 +5540,7 @@ table p {
   font-size: 20px;
   background: #fea444;
   background: linear-gradient(to left, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -5934,6 +5941,7 @@ table p {
 .event-item .content .event-name a:hover {
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -6120,6 +6128,7 @@ table p {
   margin-bottom: 0;
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.1s;
@@ -6504,6 +6513,7 @@ table p {
   z-index: -1;
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -8958,6 +8968,7 @@ table p {
   margin-bottom: 0;
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -9382,6 +9393,7 @@ table p {
   width: 50px;
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -9493,6 +9505,7 @@ table p {
   font-size: 20px;
   background: #fea444;
   background: linear-gradient(to left, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -10389,6 +10402,7 @@ table p {
   line-height: 1;
   background: #fea444;
   background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
