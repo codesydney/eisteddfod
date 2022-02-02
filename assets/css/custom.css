@@ -266,6 +266,10 @@ p#privacy-policy-lv {
 /* =====================
   SPONSORS AREA
   ===================== */
+td#sponsorship {
+  width: 15%;
+}
+
 .sponsors-area {
   display: flex;
   /* justify-content: space-between; */
