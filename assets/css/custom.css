@@ -122,6 +122,12 @@ Testimonial
   -webkit-text-fill-color: #fff;
 }
 
+/* Line styles */
+.line-style::before,
+.footer-area .widget-menu-wrap .nav-menu li a::after {
+  filter: var(--icons-and-shapes-color);
+}
+
 /* =====================
   LAYOUT
  ===================== */
