@@ -252,6 +252,13 @@ p#privacy-policy-lv {
   margin-top: 1.5rem;
 }
 
+.olist li {
+  list-style: inherit;
+  display: list-item !important;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem
+}
+
 .list li::marker {
   color: #e0ccdc;
 }
