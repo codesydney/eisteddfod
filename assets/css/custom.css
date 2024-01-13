@@ -256,7 +256,7 @@ p#privacy-policy-lv {
   list-style: inherit;
   display: list-item !important;
   margin-top: 1.5rem;
-  margin-left: 1.5rem
+  margin-left: 1.5rem;
 }
 
 .list li::marker {
@@ -660,6 +660,27 @@ h2.commitee-title {
 }
 
 /* Contact Page */
+.contact-name {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.contact-designation {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: -0.95rem;
+}
+
+.contact-number {
+  color: whitesmoke;
+  position: relative;
+  top: -0.4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
 .contact-info-content {
   background: var(--purple-linear-gradient) !important;
 }
